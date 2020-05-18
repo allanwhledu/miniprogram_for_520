@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>StoryWindow</class>
+ <widget class="QMainWindow" name="StoryWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>523</width>
+    <height>412</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>481</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>40</y>
+        <width>411</width>
+        <height>251</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;《天上有一朵云》作者：郑渊洁自从羊群里有了小羊羔后，牧羊人不再寂寞了。&lt;/p&gt;&lt;p&gt;那个稚嫩的小生命是在上周的星期四来到这个世界上的。牧羊人起初并未注意小羊羔，可当他看她第二眼的时候，他的心灵被震撼了--纯洁、美丽、透明。.....所有这类形容词都通过小羊羔的形体争先恐后摩肩接踵地挤进他的脑海里。&lt;/p&gt;&lt;p&gt;小羊羔的出现给牧羊人的生命带来了活力，使牧羊人那本已被尘世弄得精皮力尽的身心再度燃起了青春之火。牧羊人感到奇怪，以往的几十万元遗产没有给他带来幸福，一只小羊羔却使他强烈感受到生命的美好。可见终生追逐金钱的人实在是干着一件与追逐美好的人生南辕北辙的蠢事。&lt;/p&gt;&lt;p&gt;牧羊人比以往起得更早，他带着他的羊群寻找肥沃水灵的草地。他愿意为羊群提供最鲜美的食物，他喜欢看青草为羊群肌体里每一个细胞提供能源的过程，他觉得这是一种真正的享受。能通过自己的劳动促进自己生命之外的生命新陈代谢的人是世界上最幸福的人。有了小羊羔以后，牧羊人更深刻地体验到这种感觉。&lt;/p&gt;&lt;p&gt;小羊羔也很喜欢牧羊人，她知道他的价值，她理解他为什么要绞尽脑汁为羊群寻找最好的青草。她感激，她兴奋。通过他，她懂得了生命的含义。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>40</y>
+        <width>441</width>
+        <height>281</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;一天，小羊羔问牧羊人：&lt;br/&gt;&amp;quot;你为什么喜欢我？&amp;quot;&lt;br/&gt;“因为你像羊。&amp;quot;&lt;br/&gt;“不是所有的羊都像羊吗？&amp;quot;&lt;br/&gt;“有的羊像狼。&amp;quot;&lt;br/&gt;过了一会儿，牧羊人问小羊羔：&lt;br/&gt;&amp;quot;你为什么喜欢我？&lt;br/&gt;&amp;quot;因为你像人。&amp;quot;&lt;br/&gt;“不是所有的人都像人吗？&amp;quot;&lt;br/&gt;“有的人像狼。&amp;quot;&lt;br/&gt;以某一种形式的生命投生到这个星球上，内容却又不像那种生命的形式，这是&lt;br/&gt;生命的悲哀。&lt;br/&gt;只有生命的内容和生命的形式一致时，才是灿烂的生命。&lt;br/&gt;两个这样的生命碰到一起，是上帝的恩赐。可惜上帝在这方面是吝啬的。牧羊&lt;br/&gt;人和小羊羔明白这一点，于是他们更加迷恋对方，更加珍惜上帝对他们的照顾。&lt;br/&gt;羊群终于不能忍受牧羊人对小羊羔的偏爱了，嫉妒像病毒一样在羊群中迅速蔓&lt;br/&gt;延，它终于形成了风暴。&lt;br/&gt;在这个星球上，热带风暴和台风都不是最可怕的，最可怕的是嫉妒的风暴。没&lt;br/&gt;有人给嫉妒风暴定级，但这次羊群对小羊羔刮起的嫉妒风暴应该是在１２级以上。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>523</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
