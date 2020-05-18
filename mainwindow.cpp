@@ -13,13 +13,13 @@ MainWindow::MainWindow(QWidget *parent) :
 
     QFontDatabase::addApplicationFont(":/font/res/font/forLetter.ttf");
 
-    QFont font;
-    font.setFamily("momo_xinjian");
-    font.setPixelSize(40);
+//    QFont font;
+//    font.setFamily("momo_xinjian");
+//    font.setPixelSize(40);
 
-    QFont minifont;
-    minifont.setFamily("momo_xinjian");
-    minifont.setPixelSize(30);
+//    QFont minifont;
+//    minifont.setFamily("momo_xinjian");
+//    minifont.setPixelSize(30);
 
 //    ui->pushButton->setFont(font);
 //    ui->label->setFont(minifont);
@@ -46,10 +46,10 @@ void MainWindow::on_pushButton_clicked()
     }
     else if(this->ui->lineEdit->text()=="")
     {
-        QMessageBox::information(this,"Em~Em~","至少写个密码试一试嘛！");
+        QMessageBox::information(this,"Emm~","至少写个密码试一试嘛！");
     }
     else
     {
-        QMessageBox::information(this,"Hia~Hia~","你没有猜对密码，再来一次！比心");
+        QMessageBox::information(this,"Hia~Hia~","你没有猜对密码，再来一次！比心哦");
     }
 }
