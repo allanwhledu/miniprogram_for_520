@@ -2,5 +2,6 @@
     <qresource prefix="/img">
         <file>res/img/Clipboard - 2020-03-04 20.25.15.png</file>
         <file>res/img/Clipboard - 2020-03-04 20.42.37.png</file>
+        <file>res/img/Snipaste_2020-06-01_16-25-41.png</file>
     </qresource>
 </RCC>

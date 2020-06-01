@@ -20,6 +20,7 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    int error_count;
 };
 
 #endif // MAINWINDOW_H

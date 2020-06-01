@@ -69,6 +69,8 @@ void SSubWindow::btn_start(){
 
 void SSubWindow::btn_stop(){
     if(this->m_timer->isActive()){
+        this->init_time(this->min_setting, this->sec_setting);
+        this->update_lcd(this->min_left, this->sec_left);
         this->m_timer->stop();
     }
 }
@@ -107,9 +109,10 @@ void SSubWindow::update_action_log(){
             this->m_timer->stop();
             this->setWindowState( (windowState() & ~Qt::WindowMinimized) | Qt::WindowActive);
             this->activateWindow();
+            QApplication::beep();
             QMessageBox::StandardButton reply;
-            reply = QMessageBox::question(this, tr("Congrats!"),
-                                          tr("Do you want to restart?"),
+            reply = QMessageBox::question(this, tr("宝宝棒棒哒！一个番茄完成啦!"),
+                                          tr("再接再厉，再来一次?             "),
                                             QMessageBox::Yes | QMessageBox::No);
             if(reply == QMessageBox::Yes){
                 this->btn_start();
@@ -146,3 +149,13 @@ SSubWindow::~SSubWindow()
     delete ui;
 }
 
+
+void SSubWindow::on_return_button_clicked()
+{
+//    this->hide();
+    if(this->m_timer->isActive()){
+        this->m_timer->stop();
+    }
+    this->close();
+    this->parent_window->show();
+}

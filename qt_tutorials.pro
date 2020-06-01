@@ -30,21 +30,24 @@ SOURCES += main.cpp\
     ssubwindow.cpp \
     counterwindow.cpp \
     storywindow.cpp \
-    settingsdialog.cpp
+    settingsdialog.cpp \
+    function_choose.cpp
 
 HEADERS  += mainwindow.h \
     subwindow.h \
     ssubwindow.h \
     counterwindow.h \
     storywindow.h \
-    settingsdialog.h
+    settingsdialog.h \
+    function_choose.h
 
 FORMS    += mainwindow.ui \
     subwindow.ui \
     ssubwindow.ui \
     counterwindow.ui \
     storywindow.ui \
-    settingsdialog.ui
+    settingsdialog.ui \
+    function_choose.ui
 
 RESOURCES += \
     font.qrc \

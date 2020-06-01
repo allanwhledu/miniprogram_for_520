@@ -5,6 +5,8 @@
 #include <QTimer>
 #include <QString>
 #include "settingsdialog.h"
+#include "subwindow.h"
+#include "function_choose.h"
 
 namespace Ui {
 class SSubWindow;
@@ -15,6 +17,7 @@ class SSubWindow : public QMainWindow
     Q_OBJECT
 
 public:
+    Function_choose* parent_window;
     explicit SSubWindow(QWidget *parent = 0);
     ~SSubWindow();
 
@@ -38,6 +41,8 @@ public slots:
     void btn_stop();
     void show_settings();
     void setup(int, int);
+private slots:
+    void on_return_button_clicked();
 };
 
 #endif // SSUBWINDOW_H

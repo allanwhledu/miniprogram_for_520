@@ -9,6 +9,8 @@ MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
+    error_count = 0;
+
     ui->setupUi(this);
 
     QFontDatabase::addApplicationFont(":/font/res/font/forLetter.ttf");
@@ -37,7 +39,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_clicked()
 {
-    QString password = "123";
+    QString password = "0306";
     if(this->ui->lineEdit->text()==password)
     {
         auto s = new SubWindow;
@@ -50,6 +52,21 @@ void MainWindow::on_pushButton_clicked()
     }
     else
     {
-        QMessageBox::information(this,"Hia~Hia~","你没有猜对密码，再来一次！比心哦");
+        if(error_count < 3)
+        {
+            QMessageBox::information(this,"Hia~Hia~","你没有猜对密码，再来一次！");
+            error_count++;
+        }
+        else if(error_count < 5) {
+            QMessageBox::information(this,"Hia~Hia~","加——油—— 再试一试，说不定我之后会给你提示哦");
+            error_count++;
+        }
+        else if(error_count < 7) {
+            QMessageBox::information(this,"Hia~Hia~","哎呀，就是月日格式的一个日子啦，4个数字，比心哦");
+            error_count++;
+        }
+        else if(error_count > 6){
+            QMessageBox::information(this,"(+_+)?","密码就是纪念日啦");
+        }
     }
 }
